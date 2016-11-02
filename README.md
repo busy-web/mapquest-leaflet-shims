@@ -23,14 +23,15 @@ To install into your project, simply run:
 To access in your code, use the global MQ object:
 
 
-    let geocode = MQ.geocode(); //MQ is global
-    return new RSVP.Promise(function(resolve, reject) {
-      geocode.search(locationObj)
-        .on('success', function(e) {
-          let bestMatch = e.result.best;
-          resolve(bestMatch);
-        });
+```javascript
+let geocode = MQ.geocode(); //MQ is global
+return new RSVP.Promise(function(resolve, reject) {
+  geocode.search(locationObj)
+    .on('success', function(e) {
+      let bestMatch = e.result.best;
+      resolve(bestMatch);
     });
+});```
 
 
  * see https://developer.mapquest.com/documentation/leaflet-plugins/geocoding/ for details on MQ's libraries
