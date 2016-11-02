@@ -21,6 +21,7 @@ To install into your project, simply run:
 * edit your environment.js file accordingly
 
 To access in your code, use the global MQ object:
+
 ```javascript
     let geocode = MQ.geocode(); //MQ is global
     return new RSVP.Promise(function(resolve, reject) {
@@ -31,6 +32,7 @@ To access in your code, use the global MQ object:
         });
     });
 ```
+
  * see https://developer.mapquest.com/documentation/leaflet-plugins/geocoding/ for details on MQ's libraries
  * if you're not returning call in a promise-aware hook (i.e. model hooks), I highly recommend wrapping this stuff in ember-concurrency tasks (https://github.com/machty/ember-concurrency)
 
