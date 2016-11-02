@@ -4,14 +4,16 @@ If you want to use MapQuest's Leaflet plugins with an Ember application (more sp
 then you need to include MapQuest's leaflet plugin libraries (see https://developer.mapquest.com/documentation/leaflet-plugins/). Downloading these resources requires your specific
 MapQuest API key to be passed and each library (maps [for tiles], geocoding, routing and traffic) need to be individually downloaded at run-time. To control this behavior, edit your config/environment.js file as follows:
 
-`ENV.MapQuestAPI = {
+```javascript
+ENV.MapQuestAPI = {
     key: 'your_super_secret_api_key',
     map: 'true',        //default is 'true'
     geocoding: 'true',  //default is 'false'
     routing: 'true',    //default is 'false'
     traffic: 'true'     //default is 'false'
     version: '2.2'      //default is '2.2', this is the MapQuest API version number to use.
-  };`
+  };
+```
 
 To install into your project, simply run:
 
