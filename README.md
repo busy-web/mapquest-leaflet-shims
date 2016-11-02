@@ -31,7 +31,8 @@ return new RSVP.Promise(function(resolve, reject) {
       let bestMatch = e.result.best;
       resolve(bestMatch);
     });
-});```
+});
+```
 
 
  * see https://developer.mapquest.com/documentation/leaflet-plugins/geocoding/ for details on MQ's libraries
