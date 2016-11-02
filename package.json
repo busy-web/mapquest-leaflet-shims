@@ -1,6 +1,6 @@
 {
   "name": "mapquest-leaflet-shims",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds various mapquest ember-leaflet JS libraries to your project using your MQ Developer API access key.",
   "directories": {
     "doc": "doc",
